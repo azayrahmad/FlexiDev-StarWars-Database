@@ -1,5 +1,5 @@
+import React, { useState, useEffect } from "react";
 import logo from "./logo.svg";
-import React, { useState } from "react";
 import CharacterList from "./components/CharacterList";
 import CharacterDetail from "./components/CharacterDetail";
 import "./App.css";
@@ -7,6 +7,7 @@ import "./App.css";
 function App() {
   const [currentPage, setCurrentPage] = useState("list");
   const [selectedCharacterUrl, setSelectedCharacterUrl] = useState(null);
+  const [characterPage, setCharacterPage] = useState(1);
 
   const navigateToCharacter = (url) => {
     setSelectedCharacterUrl(url);
@@ -25,7 +26,11 @@ function App() {
       </header>
       <main>
         {currentPage === "list" ? (
-          <CharacterList onCharacterSelect={navigateToCharacter} />
+          <CharacterList
+            onCharacterSelect={navigateToCharacter}
+            currentPage={characterPage}
+            setCharacterPage={setCharacterPage}
+          />
         ) : (
           <CharacterDetail
             characterUrl={selectedCharacterUrl}

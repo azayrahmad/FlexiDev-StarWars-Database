@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-const CharacterList = ({ onCharacterSelect }) => {
+const CharacterList = ({ onCharacterSelect, currentPage, setCharacterPage }) => {
   const [characters, setCharacters] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
 
   useEffect(() => {
@@ -31,11 +30,11 @@ const CharacterList = ({ onCharacterSelect }) => {
   }, [currentPage]);
 
   const handlePrevPage = () => {
-    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+    setCharacterPage((prevPage) => Math.max(prevPage - 1, 1));
   };
 
   const handleNextPage = () => {
-    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
+    setCharacterPage((prevPage) => Math.min(prevPage + 1, totalPages));
   };
 
   if (loading) return <div>Loading...</div>;
