@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const CharacterDetail = ({ characterId, onBackClick }) => {
+const CharacterDetail = ({ characterUrl, onBackClick }) => {
   const [character, setCharacter] = useState(null);
   const [additionalInfo, setAdditionalInfo] = useState({
     films: [],
@@ -15,9 +15,7 @@ const CharacterDetail = ({ characterId, onBackClick }) => {
     const fetchCharacter = async () => {
       setLoading(true);
       try {
-        const response = await fetch(
-          `https://swapi.dev/api/people/${characterId}/`
-        );
+        const response = await fetch(characterUrl);
         if (!response.ok) {
           throw new Error("Failed to fetch character details");
         }
@@ -32,7 +30,7 @@ const CharacterDetail = ({ characterId, onBackClick }) => {
     };
 
     fetchCharacter();
-  }, [characterId]);
+  }, [characterUrl]);
 
   const fetchAdditionalInfo = async (characterData) => {
     const categories = ["films", "species", "starships", "vehicles"];

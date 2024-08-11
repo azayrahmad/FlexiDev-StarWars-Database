@@ -47,11 +47,7 @@ const CharacterList = ({ onCharacterSelect }) => {
       <ul>
         {characters.map((character, index) => (
           <li key={index}>
-            <button
-              onClick={() =>
-                onCharacterSelect((currentPage - 1) * 10 + index + 1)
-              }
-            >
+            <button onClick={() => onCharacterSelect(character.url)}>
               {character.name}
             </button>
           </li>

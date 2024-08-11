@@ -6,10 +6,10 @@ import "./App.css";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("list");
-  const [selectedCharacterId, setSelectedCharacterId] = useState(null);
+  const [selectedCharacterUrl, setSelectedCharacterUrl] = useState(null);
 
-  const navigateToCharacter = (id) => {
-    setSelectedCharacterId(id);
+  const navigateToCharacter = (url) => {
+    setSelectedCharacterUrl(url);
     setCurrentPage("detail");
   };
 
@@ -28,7 +28,7 @@ function App() {
           <CharacterList onCharacterSelect={navigateToCharacter} />
         ) : (
           <CharacterDetail
-            characterId={selectedCharacterId}
+            characterUrl={selectedCharacterUrl}
             onBackClick={navigateToList}
           />
         )}
