@@ -35,15 +35,15 @@ body {
 
 .App-header {
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .App-header h1 {
+  font-family: 'StarJedi';
   font-size: 4em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  text-shadow: -1px -1px 0 #feda4a, 1px -1px 0 #feda4a, -1px 1px 0 #feda4a, 1px 1px 0 #feda4a;
-  color: #000;
+  /* text-shadow: -1px -1px 0 #feda4a, 1px -1px 0 #feda4a, -1px 1px 0 #feda4a, 1px 1px 0 #feda4a; */
+  color: #feda4a;
 }
 
 .character-list ul {
@@ -52,6 +52,7 @@ body {
 }
 
 .character-list li {
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -141,6 +142,7 @@ body {
 }
 
 .character-detail p, .character-detail li {
+  font-family:Arial, Helvetica, sans-serif;
   font-size: 1.1em;
   line-height: 1.4;
 }
@@ -160,4 +162,22 @@ body {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+
+a {
+  color: #ffd700; /* Golden yellow for normal state */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffff00; /* Bright yellow for hover state */
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #ffa500; /* Orange-yellow for visited state */
+}
+
+a:active {
+  color: #fffacd; /* Light yellow for active state */
 }

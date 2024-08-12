@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
+import logo from "./darth-vader-svgrepo-com.svg";
 import CharacterList from "./components/CharacterList/CharacterList";
 import CharacterDetail from "./components/CharacterDetail/CharacterDetail";
 import "./App.css";
@@ -22,7 +22,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Star Wars People Lookup</h1>
+        <h1>Star Wars Database</h1>
+        <h2>
+          A list of people in Star Wars universe. Data sourced from{" "}
+          <a href="https://swapi.dev">SWAPI</a>
+        </h2>
       </header>
       <main>
         {currentPage === "list" ? (

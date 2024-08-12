@@ -11,8 +11,18 @@ const CharacterList = ({
     `https://swapi.dev/api/people/?page=${currentPage}`
   );
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
+  if (loading)
+    return (
+      <div>
+        <h2>Loading...</h2>
+      </div>
+    );
+  if (error)
+    return (
+      <div>
+        <h2>{error}</h2>
+      </div>
+    );
 
   const handlePrevPage = () => {
     setCharacterPage((prevPage) => Math.max(prevPage - 1, 1));
@@ -26,7 +36,6 @@ const CharacterList = ({
 
   return (
     <div className="character-list">
-      <h2>Star Wars Characters</h2>
       <ul>
         {data.results.map((character, index) => (
           <CharacterItem

@@ -1,6 +1,6 @@
 # FlexiDev StarWars Database
 
-ReactJS Frontend using Star Wars API (SWAPI) to list and display details about characters from the Star Wars universe.
+ReactJS Frontend using Star Wars API (SWAPI) to list and display details about characters from the Star Wars universe. Visit [SWAPI](https://swapi.dev/) for more info on Star Wars API.
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@ ReactJS Frontend using Star Wars API (SWAPI) to list and display details about c
 
 ## Demo
 
-You can view a live demo of the application on GitHub Pages: [Star Wars People Lookup](https://azayrahmad.github.io/FlexiDev-StarWars-Database/)
+You can view a live demo of the application on GitHub Pages: [Star Wars Database](https://azayrahmad.github.io/FlexiDev-StarWars-Database/)
 
 ## Features
 
@@ -22,11 +22,11 @@ You can view a live demo of the application on GitHub Pages: [Star Wars People L
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository using GitHub desktop or using these commands:
 
    ```bash
    git clone https://github.com/azayrahmad/FlexiDev-StarWars-Database.git
-   cd star-wars-people-lookup
+   cd star-wars-character-lookup
    ```
 
 2. Install dependencies:
