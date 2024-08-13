@@ -25,7 +25,11 @@ function App() {
         <h1>Star Wars Database</h1>
         <h2>
           A list of people in Star Wars universe. Data sourced from{" "}
-          <a href="https://swapi.dev">SWAPI</a>
+          <a href="https://swapi.dev">SWAPI</a>. View the source code in{" "}
+          <a href="https://github.com/azayrahmad/FlexiDev-StarWars-Database">
+            GitHub
+          </a>
+          .
         </h2>
       </header>
       <main>
