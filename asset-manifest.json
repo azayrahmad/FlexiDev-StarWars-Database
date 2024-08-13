@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/FlexiDev-StarWars-Database/static/css/main.1286e042.css",
-    "main.js": "/FlexiDev-StarWars-Database/static/js/main.0a44f978.js",
+    "main.css": "/FlexiDev-StarWars-Database/static/css/main.364ad1c1.css",
+    "main.js": "/FlexiDev-StarWars-Database/static/js/main.92db889f.js",
     "static/js/453.95c2ca47.chunk.js": "/FlexiDev-StarWars-Database/static/js/453.95c2ca47.chunk.js",
     "static/media/Starjedi.ttf": "/FlexiDev-StarWars-Database/static/media/Starjedi.8d577dc1e1755c4860f3.ttf",
     "static/media/darth-vader-svgrepo-com.svg": "/FlexiDev-StarWars-Database/static/media/darth-vader-svgrepo-com.159152f8ae665c2d58a7067a13597d4a.svg",
     "index.html": "/FlexiDev-StarWars-Database/index.html",
-    "main.1286e042.css.map": "/FlexiDev-StarWars-Database/static/css/main.1286e042.css.map",
-    "main.0a44f978.js.map": "/FlexiDev-StarWars-Database/static/js/main.0a44f978.js.map",
+    "main.364ad1c1.css.map": "/FlexiDev-StarWars-Database/static/css/main.364ad1c1.css.map",
+    "main.92db889f.js.map": "/FlexiDev-StarWars-Database/static/js/main.92db889f.js.map",
     "453.95c2ca47.chunk.js.map": "/FlexiDev-StarWars-Database/static/js/453.95c2ca47.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1286e042.css",
-    "static/js/main.0a44f978.js"
+    "static/css/main.364ad1c1.css",
+    "static/js/main.92db889f.js"
   ]
 }
