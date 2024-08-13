@@ -12,6 +12,8 @@ ReactJS Frontend using Star Wars API (SWAPI) to list and display details about c
 ## Demo
 
 You can view a live demo of the application on GitHub Pages: [Star Wars Database](https://azayrahmad.github.io/FlexiDev-StarWars-Database/)
+![image](https://github.com/user-attachments/assets/70f3b0e8-c49a-4993-93aa-ed067aba037e)
+
 
 ## Features
 
